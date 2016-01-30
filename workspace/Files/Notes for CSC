@@ -1,0 +1,31 @@
+# NOTES for Computer Org:
+#"ls is" cmd line key for dirotry.
+#"ls -a" show hiden files 
+#"ls -al" show al hiden files
+#"date" show the time
+#"cd" take you home 
+#"clear" clears your cmds
+#"ls workspace/" opens the file in your current dirotry
+#"cd workspace/" opens the file in any dirotry 
+#"mkdir" makes a new dirotry for example "mkdir c-demo"
+#"touch hello.c" updates the time or creates the file 
+#"ddate" gives you hte Discordian Calendar
+#"gcc" runs the code
+#"./" means seach the file i am in
+#'gcc -o" name the file example "gcc -o helloprogram hello.c"
+#"pyhthon hello.py" runs hello.py 
+# look at publications.gbdirect.co.uk
+# "Ctrl K" will clear the termael 
+
+#Notes: 
+  %x  - Print the hex value of the argument.
+  %s  - The char string at the address passed to it.
+  %d  - For our purposes this will just print strings of data for
+        incrementing bytes. Should not be used, can create unwanted
+        output.
+  %u  - For our purposes this will just print strings of data for
+        incrementing bytes. This is unsigned as compared to %d
+        which is signed. This will drop any negative values that 
+        could possibly add a - into the output.
+  %n  - Write the number of bytes previously written to the address  
+        given.

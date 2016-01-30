@@ -1,0 +1,9 @@
+CHIP And4way {
+    IN a, b, c, d;
+    OUT out;
+
+    PARTS:
+        And(a = a, b= b, out= A)
+        And(a = c, b = d, out = B)
+		And(a = A, b = B,out = out);
+}

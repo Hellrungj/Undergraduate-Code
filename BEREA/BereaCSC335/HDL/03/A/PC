@@ -1,0 +1,32 @@
+CHIP PC {
+
+    IN  in[16], load, inc, reset;
+    OUT out[16];
+
+    PARTS:      
+    Inc16(in=out1, out=out2);
+    Mux16(a=out1, b=out2, sel=inc, out=out3);
+    Mux16(a=out3, b=in, sel=load, out=out4);
+    Mux16(a=out4, b=false, sel=reset, out=out5);
+    Register(in=out5, load=true, out=out1, out=out);
+}
+
+
+================================================================================
+
+Note in class for PC 
+
+
+
+        |===================inc16
+in      |                     |
+======  =Mux=====Mux==Reg=========out  
+   | |===Mux    =Mux   |
+   |       |    | |  |=Or (one bit Or)
+   ==Xor========= |  | |
+   |=Xor   |      |  | |
+(Xor16     |========== |
+or false)  |      |====Or
+           |      |    |
+         Load   reset  inc
+        

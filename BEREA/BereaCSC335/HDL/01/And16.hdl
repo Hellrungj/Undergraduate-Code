@@ -1,0 +1,11 @@
+CHIP And16 {
+    IN a, b, c, d, e, f, g, h, i, j, k, l, m, n , o, p;
+    OUT out;
+
+    PARTS:
+        And4way(a = a, b= b, c= c, d= d, out= A)
+        And4way(a = e, b= f, c= g, d= h, out= B)
+        And4way(a = i, b= j, c= k, d= l, out= C)
+        And4way(a = m, b= n, c= o, d= p, out= D)
+        And4way(a = A, b= B, c= C, d= D, out= out)
+}

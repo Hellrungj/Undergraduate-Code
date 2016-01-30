@@ -1,0 +1,5 @@
+TF: clean
+	gcc -o TF TF.c
+clean:
+	rm -f TF
+all: TF

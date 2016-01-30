@@ -1,0 +1,10 @@
+CHIP HalfAdder {
+
+    IN  a, b;
+    OUT sum,   // LSB of a + b
+        carry; // MSB of a + b
+
+    PARTS:
+    Xor(a=a,b=b,out=sum);
+    And(a=a,b=b,out=carry);
+}

@@ -1,0 +1,39 @@
+#-------------------------------------------------------------------------------
+# Name:        hellrungj 
+# Purpose:      Pseudocode for Rock,Paper,Scissors,Lizard,Spock.py
+# Created:     22/08/2014
+# Copyright:   (c) hellrungj 2014
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+Obejective:
+    This is notes for the game Rock, Paper, Scissors, Lizard, Spock 
+    
+I believe that I will need these functions:
+    Random
+        Random choices a randomly for the computer and return it 
+    Check(user_input, Computer_input)
+        Takes the user input and the computer input and check with if statements 
+        it check for diffent outcomes and calls 
+    Rock
+        
+    Paper
+    
+    
+    Scissors
+    
+    Lizard
+    
+    Spock
+    
+    Computer_vsUser
+        Computer_vsUser asks the user to pick (Rock, Paper, Scissors, Lizard, Spock)
+         Call random
+         it take both random and the users input and calls Check
+    User_vsUser
+
+    Promt
+        Promt asks the user if the user want to play a with the computer or another user
+        if the computer is chossen then Promt call Computer_vsUser
+        else Promt call User_vsUser
+    main
+        Calls Promt 
